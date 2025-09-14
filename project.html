@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+</head>
+<body>
+    
+    <p>sum of arguments and math objects</p>
+    <p id="demo"></p>
+
+    <script>
+        function sumALL() {
+
+            var sum = 0;
+
+            for(i = 0; i < arguments.length; i++) {
+                sum += arguments[i];
+            }
+            return sum;
+        }
+        document.getElementById("demo").innerHTML = sumALL(1, 123, 500, 115, 44, 88)
+    </script>
+</body>
+</html>
